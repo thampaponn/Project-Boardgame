@@ -1,4 +1,4 @@
 # Project-Boardgame
-Arcade Python Boardgame \n
-Available for Windows with Python, Pygame installed \n
+Arcade Python Boardgame
+Available for Windows with Python, Pygame installed
 Not yet available on mac os
