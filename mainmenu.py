@@ -135,13 +135,19 @@ def rockpasci():
         """rule of RPS"""
         if p1_shoot == p2_shoot:
             p1_all_re['ties'] += 1
+            pygame.mixer.music.load('click.mp3')
+            pygame.mixer.music.play()
             return "tied"
         elif (p1_shoot == "rock" and p2_shoot == "scissors") or (p1_shoot == "paper" and p2_shoot == "rock") or \
             (p1_shoot == "scissors" and p2_shoot == "paper"):
             p1_all_re['wins'] += 1
+            pygame.mixer.music.load('click.mp3')
+            pygame.mixer.music.play()
             return "P1 won"
         else:
             p1_all_re['losses'] += 1
+            pygame.mixer.music.load('click.mp3')
+            pygame.mixer.music.play()
             return "P1 lost"
 
     def on_click(e): #แสดงแถบผลการเล่นในรอบนั้นๆ
@@ -155,7 +161,7 @@ def rockpasci():
     root.eval('tk::PlaceWindow . center')
     root.title('Rock Paper Scissors')
     root.option_add("*Font", "consolas 20")
-    root.configure(bg='blue')
+    root.configure(bg='black')
     shoot = ['rock', 'paper', 'scissors']
     p1_shoot = [PhotoImage(file=f'{img}.png') for img in shoot]
     f1 = Frame(root)
@@ -167,11 +173,11 @@ def rockpasci():
     result_all = StringVar()
 
     for i in range(len(p1_shoot)):
-        w = Button(f1, image=p1_shoot[i], text=shoot[i], borderwidth=0)
-        w.pack(side=LEFT, padx=10)
+        w = Button(f1, image=p1_shoot[i], text=shoot[i], bd=0, bg='black')
+        w.pack(side=LEFT)
         w.bind('<Button-1>', on_click)
-    Label(f2, textvariable=tv_result, width=40).pack()
-    Label(f2, textvariable=result_all, width=40, bg="pink").pack()
+    Label(f2, textvariable=tv_result, width=40, bd=0, fg='white', bg='black').pack()
+    Label(f2, textvariable=result_all, width=40, bd=0, fg='white', bg="black").pack()
     root.mainloop()
     pygame.mixer.unpause()
 
