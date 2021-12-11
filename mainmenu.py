@@ -56,7 +56,6 @@ def main_menu():
         button_8 = pygame.Rect(1190, 630, 80, 80)
         pygame.draw.rect(screen, (255, 0, 0), button_6)
         pygame.draw.rect(screen, (255, 0, 0), button_7)
-        pygame.draw.rect(screen, (255, 0, 0), button_8)
         if button_1.collidepoint((mx, my)):
             if click:
                 pygame.mixer.pause()
