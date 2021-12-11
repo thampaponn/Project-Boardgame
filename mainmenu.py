@@ -15,6 +15,7 @@ pic2 = pygame.image.load('images/logo2.png') #icon image
 pic3 = pygame.image.load('images/logo1.png') #icon image
 pic4 = pygame.image.load('images/logo4.png') #icon image
 pic5 = pygame.image.load('images/logo5.png') #icon image
+pic8 = pygame.image.load('images/logo8.png') #icon image
 pygame.display.set_icon(icon) #window icon
 pygame.display.set_caption("Arcade Python Boardgame")
 soundObj = pygame.mixer.Sound('mainmenu.mp3')
@@ -40,6 +41,7 @@ def main_menu():
         screen.blit(pic3, (814, 127))
         screen.blit(pic4, (285, 329))
         screen.blit(pic5, (637, 329))
+        screen.blit(pic8, (1190, 630))
         draw_text('Arcade Python Boardgame', font, (255, 255, 255), screen, 525, 50)
         
         mx, my = pygame.mouse.get_pos()
