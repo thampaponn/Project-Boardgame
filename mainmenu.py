@@ -2,7 +2,6 @@ import pygame, sys
 import random
 from tkinter import *
 from pygame import mixer
-from lol import omegalul
 
 # Setup pygame/window ---------------------------------------- #
 mainClock = pygame.time.Clock()
