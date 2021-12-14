@@ -102,7 +102,7 @@ def main_menu():
         pygame.display.update()
         mainClock.tick(60)
    
-   def rockpasci():
+def rockpasci():
     pygame.mixer.music.load('sounds/menu4.mp3')
     pygame.mixer.music.play(-1, 0)
     pygame.mixer.music.set_volume(0.25)
