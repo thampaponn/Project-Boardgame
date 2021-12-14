@@ -117,5 +117,13 @@ def snake():
     os.system('python snake.py')
     pygame.mixer.music.stop()
     pygame.mixer.unpause()
+    
+def tict():
+    pygame.mixer.music.load('sounds/menu1.mp3')
+    pygame.mixer.music.play(-1, 0)
+    pygame.mixer.music.set_volume(0.25)
+    os.system('python tictactoe.py')
+    pygame.mixer.music.stop()
+    pygame.mixer.unpause()
 
 main_menu()
