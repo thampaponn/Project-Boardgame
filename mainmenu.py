@@ -125,5 +125,21 @@ def tict():
     os.system('python tictactoe.py')
     pygame.mixer.music.stop()
     pygame.mixer.unpause()
+    
+ def hang():
+    pygame.mixer.music.load('sounds/menu3.mp3')
+    pygame.mixer.music.play(-1, 0)
+    pygame.mixer.music.set_volume(0.25)
+    os.system('python hang.py')
+    pygame.mixer.music.stop()
+    pygame.mixer.unpause()
+
+def fast():
+    pygame.mixer.music.load('sounds/menu2.mp3')
+    pygame.mixer.music.play(-1, 0)
+    pygame.mixer.music.set_volume(0.25)
+    os.system('python pjft.py')
+    pygame.mixer.music.stop()
+    pygame.mixer.unpause()
 
 main_menu()
