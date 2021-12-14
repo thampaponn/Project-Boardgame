@@ -121,7 +121,7 @@ while run:
                 images = []
 
                 for i in range(7):
-                    image = pygame.image.load("hangman" + str(i) + ".png")
+                    image = pygame.image.load("images/hangman" + str(i) + ".png")
                     images.append(image)
                 print(word)
                 for i in range(26):
