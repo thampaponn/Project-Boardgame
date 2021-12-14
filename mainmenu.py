@@ -109,5 +109,13 @@ def rockpasci():
     os.system('python RockPaSci.py')
     pygame.mixer.music.stop()
     pygame.mixer.unpause()
-  
+
+def snake():
+    pygame.mixer.music.load('sounds/menu5.mp3')
+    pygame.mixer.music.play(-1, 0)
+    pygame.mixer.music.set_volume(0.25)
+    os.system('python snake.py')
+    pygame.mixer.music.stop()
+    pygame.mixer.unpause()
+
 main_menu()
