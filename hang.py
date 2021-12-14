@@ -44,7 +44,7 @@ hangman_status = 0
 words = [random.choice(word_list).upper()]
 word = random.choice(words)
 guessed = []
-print(word)
+#print(word)
 
 
 
